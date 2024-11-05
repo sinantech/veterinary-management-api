@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+<div class="container">
+    <h1>Admin Panel</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Register Date</th>
+            <th>Actions</th>
+            <th>Status</th> <!-- Yeni eklenen sütun -->
+        </tr>
+        </thead>
+        <tbody id="userTable">
+        </tbody>
+    </table>
+
+    <div id="updateForm" class="update-form">
+        <h2>Update User Role</h2>
+        <input type="hidden" id="updateUserId">
+        <select id="updateRole">
+            <option value="MODERATOR">MODERATOR</option>
+            <option value="ADMIN">ADMIN</option>
+        </select>
+        <button class="btn btn-primary" onclick="submitUpdateForm()">Submit</button>
+        <button class="btn" onclick="hideUpdateForm()">Cancel</button>
+    </div>
+    <button id="goBackMainBtn" onclick="goBackToMain()">Go Back Main</button>
+</div>
+<script src="/JS/admin.js"></script>
+</body>
+</html>

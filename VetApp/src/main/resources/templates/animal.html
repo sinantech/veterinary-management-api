@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Animal</title>
+    <link rel="stylesheet" href="/css/animal.css">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h2>Register Animal</h2>
+        <form id="animalForm">
+            <label for="name">Animal Name</label>
+            <input type="text" id="name" placeholder="Enter animal name">
+
+            <label for="species">Species</label>
+            <input type="text" id="species" placeholder="Enter species">
+
+            <label for="breed">Breed</label>
+            <input type="text" id="breed" placeholder="Enter breed">
+
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="colour">Colour</label>
+            <input type="text" id="colour" placeholder="Enter colour">
+
+            <label for="dateOfBirth">Date of Birth</label>
+            <input type="date" id="dateOfBirth">
+
+            <label for="customer">Owner's ID</label>
+                <select id="customer"></select>
+
+                <button type="submit">Register</button>
+                <!-- Hata mesajı gösterimi -->
+                <div id="error-message" class="error-message"></div>
+        </form>
+        <button id="goBackButton">Go Back</button>
+        <button id="goAddButton">Go Add Vaccine</button>
+    </div>
+</div>
+<script src="/JS/animal.js"></script>
+</body>
+</html>
+

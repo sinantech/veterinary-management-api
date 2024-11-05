@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/welcome.css"> <!-- host için-->
+    <link rel="stylesheet" href="/static/css/welcome.css"> <!-- ön izleme için-->
+</head>
+<body>
+<nav class="navbar">
+    <div class="logout">
+        <a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    <div class="admin-panel">
+        <a href="/admin/admin"><i class="fas fa-lock"></i> Admin Panel</a>
+    </div>
+    <ul class="navbar-menu">
+        <li class="navbar-item" onclick="toggleSubMenu(this)">
+            <a href="#">Customer</a>
+            <ul class="submenu">
+                <li><a href="customer">Add</a></li>
+                <li><a href="allCustomer">CustomerList</a></li>
+            </ul>
+        </li>
+        <li class="navbar-item" onclick="toggleSubMenu(this)">
+            <a href="#">Animal</a>
+            <ul class="submenu">
+                <li><a href="animal">Add</a></li>
+                <li><a href="allAnimal">AnimalList</a></li>
+            </ul>
+        </li>
+        <li class="navbar-item" onclick="toggleSubMenu(this)">
+            <a href="#">Doctor</a>
+            <ul class="submenu">
+                <li><a href="doctor">Add</a></li>
+                <li><a href="allDoctor">DoctorList</a></li>
+            </ul>
+        </li>
+        <li class="navbar-item"><a href="vaccine">Vaccine</a></li>
+        <li class="navbar-item"><a href="availableDate">AvailableDate</a></li>
+        <li class="navbar-item"><a href="appointment">Appointment</a></li>
+    </ul>
+</nav>
+<h1>Welcome Veterinary Management System</h1>
+<div class="info-card">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<div class="footer">
+    <div class="social-icons">
+        <a href="https://github.com/deerborg" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ffurkanaydemir/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.behance.net/deeborgh" target="_blank"><i class="fab fa-behance"></i></a>
+    </div>
+    <p>deerborg</p>
+</div>
+<script src="/JS/welcome.js"></script>
+</body>
+</html>

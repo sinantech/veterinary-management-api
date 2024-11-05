@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="/css/appointment.css">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h2>Create Appointment</h2>
+        <form id="appointmentForm">
+
+            <label for="startDate">Start Date</label>
+            <input type="datetime-local" id="startDate">
+
+            <label for="animal">Animal's ID</label>
+            <select id="animal"></select>
+
+            <label for="doctor">Doctor's ID</label>
+            <select id="doctor"></select>
+
+            <button type="submit">Register</button>
+            <!-- Hata mesajı gösterimi -->
+            <div id="error-message" class="error-message"></div>
+        </form>
+        <button id="goBackButton">Go Back</button>
+    </div>
+    <script src="/JS/appointment.js"></script>
+</div>
+</body>
+</html>

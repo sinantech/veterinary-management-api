@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Date</title>
+    <link rel="stylesheet" href="/css/availableDate.css">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h2>Create Available Date</h2>
+        <form id="availableDateForm">
+            <label for="startDate">Start Date</label>
+            <!-- Sadece tarih bilgisi için "date" input tipi -->
+            <input type="date" id="startDate">
+
+            <label for="doctor">Doctor's ID</label>
+            <select id="doctor"></select>
+
+            <button type="submit">Register</button>
+            <!-- Hata mesajı gösterimi -->
+            <div id="error-message" class="error-message"></div>
+        </form>
+        <button id="goBackButton">Go Back</button>
+    </div>
+    <script src="/JS/availableDate.js"></script>
+</div>
+</body>
+</html>
